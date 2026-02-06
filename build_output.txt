@@ -1,0 +1,263 @@
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugKotlin FAILED
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/MainActivity.kt:14:39 Unresolved reference 'PortfolioTheme'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/MainActivity.kt:21:13 Unresolved reference 'PortfolioTheme'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/MainActivity.kt:21:28 Unresolved reference 'Surface'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/MainActivity.kt:22:17 Unresolved reference 'Surface'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/MainActivity.kt:24:29 Unresolved reference 'LightBlueBackground'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/MainActivity.kt:25:19 Unresolved reference 'NavGraph'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/MainActivity.kt:26:41 Unresolved reference 'rememberNavController'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/MainActivity.kt:27:21 Unresolved reference 'NavGraph'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/BottomNavItem.kt:23:17 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/BottomNavItem.kt:23:29 Unresolved reference 'route'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/BottomNavItem.kt:30:17 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/BottomNavItem.kt:37:17 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/BottomNavItem.kt:44:17 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/BottomNavItem.kt:51:17 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/BottomNavItem.kt:51:33 Unresolved reference 'route'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/NavGraph.kt:20:35 Unresolved reference 'Home'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/NavGraph.kt:23:28 Unresolved reference 'Home'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/NavGraph.kt:41:28 Unresolved reference 'AboutScreen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/NavGraph.kt:55:13 Unresolved reference 'AboutScreen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/NavGraph.kt:59:28 Unresolved reference 'Skills'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/NavGraph.kt:77:28 Unresolved reference 'Contact'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/NavGraph.kt:91:13 Unresolved reference 'ContactScreen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/NavGraph.kt:95:28 Unresolved reference 'Project'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/navigation/NavGraph.kt:112:35 Unresolved reference 'Settings'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:24:20 Unresolved reference 'portfolioapp'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:25:20 Unresolved reference 'portfolioapp'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:37:30 Argument type mismatch: actual type is 'kotlin.collections.List<androidx.compose.animation.core.AnimationState<kotlin.Float, androidx.compose.animation.core.AnimationVector1D>>', but 'kotlin.collections.List<androidx.compose.ui.graphics.Color>' was expected.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:38:25 Unresolved reference 'LightBlueBackground'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:39:25 Unresolved reference 'LightBlueDark'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:71:32 Unresolved reference 'TextPrimary'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:78:25 Unresolved reference 'TextPrimary'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:89:19 Unresolved reference 'BottomNavItem'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:91:17 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:92:9 Unresolved reference 'BottomNavItem'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:92:9 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:93:9 Unresolved reference 'BottomNavItem'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:94:9 Unresolved reference 'BottomNavItem'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:95:9 Unresolved reference 'BottomNavItem'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:103:59 Unresolved reference 'CardBackground'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:113:19 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:113:19 Not enough information to infer type argument for 'T'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:113:29 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:116:55 Unresolved reference 'route'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:126:11 Unresolved reference 'BottomNavItem'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:148:18 None of the following candidates is applicable:
+fun Modifier.background(color: Color, shape: Shape = ...): Modifier
+fun Modifier.background(brush: Brush, shape: Shape = ..., alpha: Float = ...): Modifier
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:149:37 Unresolved reference 'PrimaryBlue'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:155:52 Unresolved reference 'selectedIcon'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:155:75 Unresolved reference 'unselectedIcon'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:156:43 Unresolved reference 'title'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:157:40 Unresolved reference 'PrimaryBlue'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:157:57 Unresolved reference 'IconGray'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:164:29 Unresolved reference 'title'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:166:25 Unresolved reference 'PrimaryBlue'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:187:59 Unresolved reference 'CardBackground'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:199:30 Unresolved reference 'DarkBlue'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:217:14 Unresolved reference 'graphicsLayer'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:218:17 Unresolved reference 'scaleX'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:219:17 Unresolved reference 'scaleY'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:259:25 Unresolved reference 'TextSecondary'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:267:34 Unresolved reference 'PrimaryBlue'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:268:36 Unresolved reference 'LightBlueDark'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:268:36 Argument type mismatch: actual type is 'androidx.compose.animation.core.AnimationState<kotlin.Float, androidx.compose.animation.core.AnimationVector1D>', but 'androidx.compose.ui.graphics.Color' was expected.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:269:37 Unresolved reference 'LightBlueBackground'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:269:37 Argument type mismatch: actual type is 'androidx.compose.animation.core.AnimationState<kotlin.Float, androidx.compose.animation.core.AnimationVector1D>', but 'androidx.compose.ui.graphics.Color' was expected.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:270:39 Unresolved reference 'LightBlueBackground'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:270:39 Argument type mismatch: actual type is 'androidx.compose.animation.core.AnimationState<kotlin.Float, androidx.compose.animation.core.AnimationVector1D>', but 'androidx.compose.ui.graphics.Color' was expected.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:280:30 Unresolved reference 'IconGray'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:280:30 Initializer type mismatch: expected 'androidx.compose.ui.graphics.Color', actual 'androidx.compose.animation.core.AnimationState<kotlin.Float, androidx.compose.animation.core.AnimationVector1D>'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/components/Component.kt:293:20 Unresolved reference 'TextSecondary'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/about/AboutScreen.kt:24:41 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/about/AboutScreen.kt:85:71 Unresolved reference 'profile_image'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/about/AboutScreen.kt:123:17 No parameter with name 'navController' found.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/about/AboutScreen.kt:124:17 No value passed for parameter 'onItemClick'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/about/AboutScreen.kt:124:32 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:21:20 Unresolved reference 'portfolioapp'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:22:20 Unresolved reference 'portfolioapp'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:23:20 Unresolved reference 'portfolioapp'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:37:30 Unresolved reference 'FigmaPurple'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:37:43 Unresolved reference 'FigmaProgressBlue'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:37:62 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:37:64 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:38:33 Unresolved reference 'FlutterBlue'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:38:46 Unresolved reference 'FlutterProgressBlue'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:38:67 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:38:69 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:39:31 Unresolved reference 'KotlinGreen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:39:44 Unresolved reference 'KotlinProgressGreen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:39:65 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:39:67 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:40:30 Unresolved reference 'HoasYellow'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:40:42 Unresolved reference 'HoasProgressYellow'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:40:62 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:40:64 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:41:31 Unresolved reference 'MobilePink'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:41:43 Unresolved reference 'MobileProgressRed'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:41:62 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:41:64 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:42:30 Unresolved reference 'FigmaLightPurple'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:42:48 Unresolved reference 'FigmaProgressPurple'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:42:69 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:42:71 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:43:33 Unresolved reference 'FlutterLightBlue'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:43:51 Unresolved reference 'FlutterProgressTeal'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:43:72 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:43:74 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:44:31 Unresolved reference 'KotlinLightBlue'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:44:48 Unresolved reference 'KotlinProgressIndigo'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:44:70 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:44:72 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:47:5 Unresolved reference 'GradientBackground'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:48:9 @Composable invocations can only happen from the context of a @Composable function
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:52:13 Unresolved reference 'TopBar'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:59:13 Unresolved reference 'ContentCard'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:65:17 @Composable invocations can only happen from the context of a @Composable function
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:83:13 Unresolved reference 'BottomNavigationBar'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:84:32 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:85:33 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:86:49 Unresolved reference 'route'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:87:33 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:87:54 Cannot access 'var saveState: Boolean': it is private in 'androidx/navigation/NavOptionsBuilder'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/contact/ContactScreen.kt:161:29 Unresolved reference 'TextPrimary'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/home/HomeScreen.kt:166:71 Unresolved reference 'MyStory'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/home/HomeScreen.kt:185:39 Unresolved reference 'HomeScreen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/home/HomeScreen.kt:186:33 Unresolved reference 'BottomNavItem'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/home/HomeScreen.kt:187:49 Unresolved reference 'route'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/home/HomeScreen.kt:188:40 Unresolved reference 'Home'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/home/HomeScreen.kt:188:54 Cannot access 'var saveState: Boolean': it is private in 'androidx/navigation/NavOptionsBuilder'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/projects/ProjectScreen.kt:19:41 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/projects/ProjectScreen.kt:93:32 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/projects/ProjectScreen.kt:94:33 Unresolved reference 'BottomNavItem'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/projects/ProjectScreen.kt:95:49 Unresolved reference 'route'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/projects/ProjectScreen.kt:96:33 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/projects/ProjectScreen.kt:96:54 Cannot access 'var saveState: Boolean': it is private in 'androidx/navigation/NavOptionsBuilder'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/setting/SettingScreen.kt:9:41 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/setting/SettingScreen.kt:43:32 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/setting/SettingScreen.kt:44:33 Unresolved reference 'BottomNavItem'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/setting/SettingScreen.kt:45:49 Unresolved reference 'route'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/setting/SettingScreen.kt:46:33 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/setting/SettingScreen.kt:46:54 Cannot access 'var saveState: Boolean': it is private in 'androidx/navigation/NavOptionsBuilder'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:21:41 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:37:62 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:37:64 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:38:67 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:38:69 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:39:65 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:39:67 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:40:62 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:40:64 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:41:62 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:41:64 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:42:69 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:42:71 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:43:72 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:43:74 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:44:70 None of the following candidates is applicable:
+class R : Any
+class R : Any
+class R : Any
+class R : Any
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:44:72 Unresolved reference 'drawable'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:84:32 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:85:33 Unresolved reference 'BottomNavItem'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:86:49 Unresolved reference 'route'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:87:33 Unresolved reference 'Screen'.
+e: file:///C:/Users/bhrag/AndroidStudioProjects/Portfolio2/app/src/main/java/com/example/portfolio/ui/screens/skills/SkillsScreen.kt:87:54 Cannot access 'var saveState: Boolean': it is private in 'androidx/navigation/NavOptionsBuilder'.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 7s
+16 actionable tasks: 1 executed, 15 up-to-date
