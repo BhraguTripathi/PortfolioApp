@@ -30,6 +30,7 @@ This app is designed to showcase my journey as a **Computer Science Engineering 
 ## 📂 Project Structure
 
 PortfolioApp/
+
 ├── app/ # Main application source code
 
 ├── gradle/ # Gradle configuration files
