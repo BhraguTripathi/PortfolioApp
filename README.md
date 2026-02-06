@@ -31,12 +31,19 @@ This app is designed to showcase my journey as a **Computer Science Engineering 
 
 PortfolioApp/
 ├── app/ # Main application source code
+
 ├── gradle/ # Gradle configuration files
+
 ├── .idea/ # Android Studio project settings
+
 ├── build.gradle.kts # Project-level Gradle file
+
 ├── settings.gradle.kts # Project settings
+
 ├── gradlew # Gradle wrapper (Linux/Mac)
+
 ├── gradlew.bat # Gradle wrapper (Windows)
+
 └── .gitignore # Ignored files
 
 ---
