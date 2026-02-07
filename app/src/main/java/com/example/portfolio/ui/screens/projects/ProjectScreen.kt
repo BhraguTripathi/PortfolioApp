@@ -1,84 +1,135 @@
 package com.example.portfolio.ui.screens
 
-import androidx.compose.animation.core.*
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.itemsIndexed
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.portfolio.R
 import com.example.portfolio.navigation.Screen
 import com.example.portfolio.ui.components.*
 import com.example.portfolio.ui.theme.*
-import kotlinx.coroutines.delay
+
+/* ---------- DATA MODELS ---------- */
+
+enum class ProjectType {
+    APP, WEB, CLOUD, BACKEND, AI
+}
 
 data class Project(
     val title: String,
-    val imageRes: Int
+    val imageRes: Int,
+    val type: ProjectType,
+    val techStack: List<String>,
+    val githubUrl: String
 )
+
+/* ---------- SCREEN ---------- */
 
 @Composable
 fun ProjectScreen(navController: NavController) {
+
     val projects = listOf(
-        Project("E-commerce\nSite", R.drawable.profile),
-        Project("Fitness App", R.drawable.profile),
-        Project("Design\nSystem", R.drawable.profile),
-        Project("Portfolio\nWebsite", R.drawable.profile)
+        Project(
+            "E-Commerce App",
+            R.drawable.profile,
+            ProjectType.APP,
+            listOf("Kotlin", "Jetpack Compose", "Firebase", "MVVM"),
+            "https://github.com/yourusername/ecommerce-app"
+        ),
+        Project(
+            "Portfolio Website",
+            R.drawable.profile,
+            ProjectType.WEB,
+            listOf("HTML", "CSS", "JavaScript"),
+            "https://github.com/yourusername/portfolio-website"
+        ),
+        Project(
+            "Cloud Storage System",
+            R.drawable.profile,
+            ProjectType.CLOUD,
+            listOf("AWS", "EC2", "S3", "IAM"),
+            "https://github.com/yourusername/cloud-project"
+        ),
+        Project(
+            "Backend API Service",
+            R.drawable.profile,
+            ProjectType.BACKEND,
+            listOf("Java", "Spring Boot", "MySQL"),
+            "https://github.com/yourusername/backend-api"
+        ),
+        Project(
+            "AI Chatbot",
+            R.drawable.profile,
+            ProjectType.AI,
+            listOf("Python", "LLM", "NLP"),
+            "https://github.com/yourusername/ai-chatbot"
+        )
     )
+
+    var selectedFilter by remember { mutableStateOf("All") }
+
+    val filteredProjects = when (selectedFilter) {
+        "App" -> projects.filter { it.type == ProjectType.APP }
+        "Web" -> projects.filter { it.type == ProjectType.WEB }
+        "Cloud" -> projects.filter { it.type == ProjectType.CLOUD }
+        "Backend" -> projects.filter { it.type == ProjectType.BACKEND }
+        "AI" -> projects.filter { it.type == ProjectType.AI }
+        else -> projects
+    }
 
     GradientBackground {
         Column(
-            modifier = Modifier.fillMaxSize()
+            modifier = Modifier
+                .fillMaxSize()
+                .statusBarsPadding()
+                .navigationBarsPadding()
         ) {
-            // Top Bar
+
             TopBar(
                 title = "Projects",
-                showBackButton = true,
-                onBackClick = { navController.popBackStack() }
+                showBackButton = false
             )
 
-            // Projects Grid
+            ProjectFilterRow(
+                selectedFilter = selectedFilter,
+                onFilterSelected = { selectedFilter = it }
+            )
+
             ContentCard(
                 modifier = Modifier
                     .weight(1f)
                     .fillMaxWidth()
-                    .padding(horizontal = 16.dp)
+                    .padding(16.dp)
             ) {
-                LazyVerticalGrid(
-                    columns = GridCells.Fixed(2),
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .padding(16.dp),
-                    horizontalArrangement = Arrangement.spacedBy(16.dp),
+                LazyColumn(
+                    contentPadding = PaddingValues(16.dp),
                     verticalArrangement = Arrangement.spacedBy(20.dp)
                 ) {
-                    itemsIndexed(projects) { index, project ->
-                        AnimatedProjectCard(
-                            project = project,
-                            index = index,
-                            onClick = { /* Navigate to project detail */ }
-                        )
+                    items(filteredProjects) { project ->
+                        ProjectVerticalCard(project)
                     }
                 }
             }
 
-            Spacer(modifier = Modifier.height(8.dp))
-
-            // Bottom Navigation
             BottomNavigationBar(
                 currentRoute = Screen.Project.route,
                 onItemClick = { item ->
@@ -93,106 +144,116 @@ fun ProjectScreen(navController: NavController) {
     }
 }
 
+/* ---------- FILTER ROW (SCROLLABLE) ---------- */
+
 @Composable
-fun AnimatedProjectCard(
-    project: Project,
-    index: Int,
-    onClick: () -> Unit
+fun ProjectFilterRow(
+    selectedFilter: String,
+    onFilterSelected: (String) -> Unit
 ) {
-    var isVisible by remember { mutableStateOf(false) }
+    val filters = listOf("All", "App", "Web", "Cloud", "Backend", "AI")
 
-    LaunchedEffect(Unit) {
-        delay(index * 150L)
-        isVisible = true
-    }
-
-    val cardAlpha by animateFloatAsState(
-        targetValue = if (isVisible) 1f else 0f,
-        animationSpec = tween(400),
-        label = "alpha"
-    )
-
-    val cardScale by animateFloatAsState(
-        targetValue = if (isVisible) 1f else 0.8f,
-        animationSpec = spring(
-            dampingRatio = Spring.DampingRatioMediumBouncy,
-            stiffness = Spring.StiffnessLow
-        ),
-        label = "scale"
-    )
-
-    // Hover/Press animation
-    var isPressed by remember { mutableStateOf(false) }
-    val pressScale by animateFloatAsState(
-        targetValue = if (isPressed) 0.95f else 1f,
-        animationSpec = spring(dampingRatio = Spring.DampingRatioMediumBouncy),
-        label = "pressScale"
-    )
-
-    Card(
+    Row(
         modifier = Modifier
-            .fillMaxWidth()
-            .aspectRatio(0.85f)
-            .graphicsLayer {
-                alpha = cardAlpha
-                scaleX = cardScale * pressScale
-                scaleY = cardScale * pressScale
-            },
-        shape = RoundedCornerShape(20.dp),
-        colors = CardDefaults.cardColors(
-            containerColor = CardBackground
-        ),
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
-        onClick = {
-            isPressed = true
-            onClick()
-        }
+            .horizontalScroll(rememberScrollState())
+            .padding(horizontal = 16.dp, vertical = 8.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp)
     ) {
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(12.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            // Project Image
-            Card(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .weight(1f),
-                shape = RoundedCornerShape(16.dp),
-                elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
-            ) {
-                Image(
-                    painter = painterResource(id = project.imageRes),
-                    contentDescription = project.title,
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .clip(RoundedCornerShape(16.dp)),
-                    contentScale = ContentScale.Crop
-                )
-            }
-
-            Spacer(modifier = Modifier.height(12.dp))
-
-            // Project Title
-            Text(
-                text = project.title,
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.Bold,
-                color = TextPrimary,
-                textAlign = TextAlign.Center,
-                lineHeight = 22.sp,
-                modifier = Modifier.padding(horizontal = 4.dp)
+        filters.forEach { filter ->
+            FilterChip(
+                selected = selectedFilter == filter,
+                onClick = { onFilterSelected(filter) },
+                colors = FilterChipDefaults.filterChipColors(
+                    selectedContainerColor = PrimaryBlue,
+                    selectedLabelColor = MaterialTheme.colorScheme.onPrimary
+                ),
+                label = {
+                    Text(text = filter, fontWeight = FontWeight.Medium)
+                }
             )
-        }
-    }
-
-    LaunchedEffect(isPressed) {
-        if (isPressed) {
-            delay(100)
-            isPressed = false
         }
     }
 }
 
-private val EaseOutCubic = CubicBezierEasing(0.33f, 1f, 0.68f, 1f)
+/* ---------- PROJECT CARD ---------- */
+
+@Composable
+fun ProjectVerticalCard(project: Project) {
+
+    val context = LocalContext.current
+
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(20.dp),
+        colors = CardDefaults.cardColors(containerColor = CardBackground),
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+    ) {
+        Column {
+
+            Image(
+                painter = painterResource(id = project.imageRes),
+                contentDescription = project.title,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(180.dp)
+                    .clip(RoundedCornerShape(topStart = 20.dp, topEnd = 20.dp)),
+                contentScale = ContentScale.Crop
+            )
+
+            Column(modifier = Modifier.padding(16.dp)) {
+
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+
+                    Text(
+                        text = project.title,
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = TextPrimary,
+                        modifier = Modifier.weight(1f)
+                    )
+
+                    IconButton(
+                        onClick = {
+                            context.startActivity(
+                                Intent(Intent.ACTION_VIEW, Uri.parse(project.githubUrl))
+                            )
+                        }
+                    ) {
+                        Icon(
+                            painter = painterResource(id = R.drawable.instagram),
+                            contentDescription = "GitHub",
+                            tint = PrimaryBlue
+                        )
+                    }
+                }
+
+                Spacer(modifier = Modifier.height(12.dp))
+
+                FlowRow(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    project.techStack.forEach { tech ->
+                        AssistChip(
+                            onClick = {},
+                            label = {
+                                Text(text = tech, style = MaterialTheme.typography.labelSmall)
+                            }
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---------- PREVIEW ---------- */
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun ProjectScreenPreview() {
+    ProjectScreen(navController = rememberNavController())
+}
