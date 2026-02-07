@@ -131,7 +131,7 @@ fun HomeScreen(navController: NavController) {
                     Box(modifier = Modifier.fillMaxSize()) {
 
                         Image(
-                            painter = painterResource(id = R.drawable.profile),
+                            painter = painterResource(id = R.drawable.profile3),
                             contentDescription = "Profile",
                             modifier = Modifier
                                 .fillMaxSize()

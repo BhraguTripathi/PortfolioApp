@@ -177,6 +177,15 @@ $message
                             )
                         }
 
+                        SocialIconDrawable(R.drawable.github) {
+                            context.startActivity(
+                                Intent(
+                                    Intent.ACTION_VIEW,
+                                    Uri.parse("https://github.com/BhraguTripathi")
+                                )
+                            )
+                        }
+
                         SocialIconDrawable(R.drawable.x) {
                             context.startActivity(
                                 Intent(
