@@ -31,7 +31,7 @@ import com.example.portfolio.ui.theme.*
 /* ---------- DATA MODELS ---------- */
 
 enum class ProjectType {
-    APP, WEB, CLOUD, BACKEND, AI
+    AI, APP, BACKEND, CLOUD, MISCELLANEOUS, WEB
 }
 
 data class Project(
@@ -49,39 +49,46 @@ fun ProjectScreen(navController: NavController) {
 
     val projects = listOf(
         Project(
-            "E-Commerce App",
-            R.drawable.profile,
+            "Calculator App",
+            R.drawable.calculator,
             ProjectType.APP,
-            listOf("Kotlin", "Jetpack Compose", "Firebase", "MVVM"),
-            "https://github.com/yourusername/ecommerce-app"
+            listOf("Kotlin", "Jetpack Compose"),
+            "https://github.com/BhraguTripathi/CalculatorApp"
         ),
         Project(
-            "Portfolio Website",
-            R.drawable.profile,
+            "Luxury Hotel Finder",
+            R.drawable.luxaryhotalfinder,
             ProjectType.WEB,
             listOf("HTML", "CSS", "JavaScript"),
-            "https://github.com/yourusername/portfolio-website"
+            "https://github.com/BhraguTripathi/Luxury-Hotel-Finder"
         ),
         Project(
-            "Cloud Storage System",
-            R.drawable.profile,
-            ProjectType.CLOUD,
-            listOf("AWS", "EC2", "S3", "IAM"),
-            "https://github.com/yourusername/cloud-project"
+            "Snake Game",
+            R.drawable.snakegame,
+            ProjectType.MISCELLANEOUS,
+            listOf("JAVA"),
+            "https://github.com/BhraguTripathi/SnakeGame"
         ),
         Project(
-            "Backend API Service",
-            R.drawable.profile,
-            ProjectType.BACKEND,
-            listOf("Java", "Spring Boot", "MySQL"),
-            "https://github.com/yourusername/backend-api"
+            "Real Time OS Security Event Logger",
+            R.drawable.securityeventlogger,
+            ProjectType.MISCELLANEOUS,
+            listOf("Java", "JAVA Swing"),
+            "https://github.com/BhraguTripathi/Real-Time-OS-Security-Logger"
         ),
         Project(
-            "AI Chatbot",
-            R.drawable.profile,
-            ProjectType.AI,
-            listOf("Python", "LLM", "NLP"),
-            "https://github.com/yourusername/ai-chatbot"
+            "VougeVista-Fashion E-commerce",
+            R.drawable.vougevista,
+            ProjectType.WEB,
+            listOf("HTML", "CSS", "JavaScript"),
+            "https://github.com/BhraguTripathi/VougeVista"
+        ),
+        Project(
+            "College Management System",
+            R.drawable.collegemanagementsystem,
+            ProjectType.WEB,
+            listOf("HTML", "CSS", "PHP"),
+            "https://github.com/BhraguTripathi/College-Management-System-main"
         )
     )
 
@@ -151,7 +158,7 @@ fun ProjectFilterRow(
     selectedFilter: String,
     onFilterSelected: (String) -> Unit
 ) {
-    val filters = listOf("All", "App", "Web", "Cloud", "Backend", "AI")
+    val filters = listOf("All", "AI" , "App", "Backend" , "Cloud" , "Web", "Miscellaneous" )
 
     Row(
         modifier = Modifier
@@ -223,9 +230,9 @@ fun ProjectVerticalCard(project: Project) {
                         }
                     ) {
                         Icon(
-                            painter = painterResource(id = R.drawable.instagram),
-                            contentDescription = "GitHub",
-                            tint = PrimaryBlue
+                            painter = painterResource(id = R.drawable.github),
+                            contentDescription = "GitHub"
+                            //tint = PrimaryBlue
                         )
                     }
                 }
