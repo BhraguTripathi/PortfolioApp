@@ -148,7 +148,7 @@ PortfolioApp/
 
 You can download and install the APK directly on your Android device:
 
-👉 **[Download Latest APK](https://github.com/BhraguTripathi/PortfolioApp/releases/latest/download/PortfolioApp.apk)**
+👉 **[Download Latest APK](https://github.com/BhraguTripathi/PortfolioApp/releases/download/v1.0.0/app-release.apk)**
 
 > ⚠️ If the APK is not available yet, it will be published under [**Releases**](https://github.com/BhraguTripathi/PortfolioApp/releases).
 
